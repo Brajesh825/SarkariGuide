@@ -17,6 +17,9 @@ import whyUsData from "./src/datasets/whyUsData";
 import BookingList from "./src/components/bookingList";
 import { cardData , cardTitle } from "./src/datasets/cardData";
 
+// Trust
+import Trust from "./src/components/trust";
+import trustData from "./src/datasets/trustData";
 
 // Define routes
 page('/', () => {
@@ -35,10 +38,15 @@ page('/', () => {
         cardData : cardData ,
         cardTitle : cardTitle
     })
+    let trust = Trust({
+        title : trustData.title,
+        description : trustData.description
+    })
     root.appendChild(navbar);
     root.appendChild(welcome);
     root.appendChild(whyUs);
     root.appendChild(blogs);
+    root.appendChild(trust);
 });
 
 page('/about', () => {

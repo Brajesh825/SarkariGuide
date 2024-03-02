@@ -8,6 +8,8 @@
     --link-hover-color: #ccc; /* Link hover color */
     --background-color: #f5f5f5; /* Background color */
     --border-color: #ddd; /* Border color */
+    --secondary-text-color: #666; /* Secondary text color */
+    --tertiary-text-color: #030e86; /* Secondary text color */
 
     /* Spacing */
     --spacing-xs: 4px; /* Extra small spacing */
@@ -17,13 +19,67 @@
     --spacing-xl: 32px; /* Extra large spacing */
 
     /* Typography */
-    --font-family: Arial, sans-serif; /* Main font family */
+    --font-family: 'Poppins', sans-serif; /* Main font family */
     --font-size-base: 16px; /* Base font size */
     --font-size-lg: 18px; /* Large font size */
     --font-size-xl: 24px; /* Extra large font size */
 
     /* Borders */
     --border-radius: 4px; /* Border radius */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.5rem; /* Adjust font size */
+    color: var(--primary-color); /* Set the color */
+    margin-bottom: var(--spacing-lg); /* Set bottom margin */
+    font-weight: bold; /* Set font weight */
+    line-height: 1.2; /* Set line height */
+}
+
+h2 {
+    font-size: 2rem; /* Adjust font size */
+    color: var(--primary-color); /* Set the color */
+    margin-bottom: var(--spacing-lg); /* Set bottom margin */
+    font-weight: bold; /* Set font weight */
+    line-height: 1.2; /* Set line height */
+}
+
+h3 {
+    font-size: 1.5rem; /* Adjust font size */
+    color: var(--primary-color); /* Set the color */
+    margin-bottom: var(--spacing-md); /* Set bottom margin */
+    font-weight: bold; /* Set font weight */
+    line-height: 1.2; /* Set line height */
+}
+
+h4 {
+    font-size: 1.25rem; /* Adjust font size */
+    color: var(--primary-color); /* Set the color */
+    margin-bottom: var(--spacing-sm); /* Set bottom margin */
+    font-weight: bold; /* Set font weight */
+    line-height: 1.2; /* Set line height */
+}
+
+h5 {
+    font-size: 1rem; /* Adjust font size */
+    color: var(--primary-color); /* Set the color */
+    margin-bottom: var(--spacing-sm); /* Set bottom margin */
+    font-weight: bold; /* Set font weight */
+    line-height: 1.2; /* Set line height */
+}
+
+h6 {
+    font-size: 0.875rem; /* Adjust font size */
+    color: var(--primary-color); /* Set the color */
+    margin-bottom: var(--spacing-xs); /* Set bottom margin */
+    font-weight: bold; /* Set font weight */
+    line-height: 1.2; /* Set line height */
 }
 
 /* Navbar styles */
@@ -169,18 +225,15 @@ img {
     }
 }
 
-
-/* styles.css */
-
 /* Why Us container styles */
 .why-us-container {
     background-color: var(--background-color);
-    padding: var(--spacing-md);
+    padding: var(--spacing-xl) var(--spacing-lg); /* Adjusted padding */
     border-radius: var(--border-radius);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Added subtle box shadow */
     text-align: center;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 /* Why Us title styles */
@@ -193,21 +246,135 @@ img {
 /* Why Us description styles */
 .why-us-description {
     font-size: var(--font-size-lg);
-    line-height: 1.5;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-xl); /* Increased bottom margin */
 }
 
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
     .why-us-container {
-        padding: var(--spacing-sm);
+        padding: var(--spacing-lg); /* Adjusted padding */
     }
 
     .why-us-title {
         font-size: var(--font-size-lg);
-        margin-bottom: var(--spacing-md);
+        margin-bottom: var(--spacing-lg);
     }
 
     .why-us-description {
         font-size: var(--font-size-base);
+        margin-bottom: var(--spacing-lg);
     }
+}
+
+
+/* BookingList title styles */
+.booking-list-title {
+    color: var(--primary-color);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+
+.booking-list-container {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.booking-list-container .heading {
+    color: var(--primary-color); /* Set the color of the heading */
+    font-size: var(--font-size-xl); /* Set the font size of the heading */
+    margin-bottom: var(--spacing-lg); /* Set the bottom margin of the heading */
+}
+
+
+/* Define grid layout for the booking list container */
+.booking-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Initially, show 4 cards per row */
+    grid-gap: var(--spacing-md); /* Adjust the gap between cards */
+}
+
+/* Media query for tablet screens */
+@media screen and (max-width: 1024px) {
+    .booking-list {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Show 2 cards per row */
+    }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .booking-list {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Show 1 card per row */
+    }
+}
+
+
+/* Card container styles */
+.card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    overflow: hidden; /* Ensure content does not overflow */
+    transition: transform 0.3s ease; /* Add smooth transition */
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+}
+
+/* Card image styles */
+.card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: var(--border-radius); /* Rounded corners for the top */
+    border-top-right-radius: var(--border-radius);
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Card content container styles */
+/* Card content container styles */
+.card-content {
+    padding: var(--spacing-md);
+    background-color: rgba(255, 255, 255, 0.9); /* Add semi-transparent white background */
+}
+
+/* Card title styles */
+.card-title {
+    color: var(--tertiary-text-color);
+    font-size: var(--font-size-xl); /* Increase font size for title */
+    margin-bottom: var(--spacing-sm); /* Adjust margin */
+}
+
+/* Card subtitle styles */
+.card-subtitle {
+    color: var(--secondary-text-color);
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-xs); /* Adjust margin */
+}
+
+/* Card description styles */
+.card-description {
+    color: var(--secondary-text-color);
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.5;
+}
+
+/* Card link styles */
+.card-link {
+    color: var(--secondary-text-color); /* Use secondary text color */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card-link:hover {
+    color: var(--link-hover-color);
 }

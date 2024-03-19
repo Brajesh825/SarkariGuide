@@ -2,30 +2,48 @@
 
 :root {
     /* Colors */
-    --primary-color: #333; /* Main primary color */
-    --text-color: #fff; /* Main text color */
-    --link-color: #fff; /* Link color */
-    --link-hover-color: #ccc; /* Link hover color */
-    --background-color: #f5f5f5; /* Background color */
-    --border-color: #ddd; /* Border color */
-    --secondary-text-color: #666; /* Secondary text color */
-    --tertiary-text-color: #030e86; /* Secondary text color */
+    --primary-color: #333;
+    /* Main primary color */
+    --text-color: #fff;
+    /* Main text color */
+    --link-color: white;
+    /* Link color */
+    --link-hover-color: #ccc;
+    /* Link hover color */
+    --background-color: #f5f5f5;
+    /* Background color */
+    --border-color: #ddd;
+    /* Border color */
+    --secondary-text-color: #666;
+    /* Secondary text color */
+    --tertiary-text-color: #030e86;
+    /* Secondary text color */
 
     /* Spacing */
-    --spacing-xs: 4px; /* Extra small spacing */
-    --spacing-sm: 8px; /* Small spacing */
-    --spacing-md: 16px; /* Medium spacing */
-    --spacing-lg: 24px; /* Large spacing */
-    --spacing-xl: 32px; /* Extra large spacing */
+    --spacing-xs: 4px;
+    /* Extra small spacing */
+    --spacing-sm: 8px;
+    /* Small spacing */
+    --spacing-md: 16px;
+    /* Medium spacing */
+    --spacing-lg: 24px;
+    /* Large spacing */
+    --spacing-xl: 32px;
+    /* Extra large spacing */
 
     /* Typography */
-    --font-family: 'Poppins', sans-serif; /* Main font family */
-    --font-size-base: 16px; /* Base font size */
-    --font-size-lg: 18px; /* Large font size */
-    --font-size-xl: 24px; /* Extra large font size */
+    --font-family: 'Poppins', sans-serif;
+    /* Main font family */
+    --font-size-base: 16px;
+    /* Base font size */
+    --font-size-lg: 18px;
+    /* Large font size */
+    --font-size-xl: 24px;
+    /* Extra large font size */
 
     /* Borders */
-    --border-radius: 4px; /* Border radius */
+    --border-radius: 4px;
+    /* Border radius */
 }
 
 * {
@@ -35,55 +53,88 @@
 
 /* Heading styles */
 h1 {
-    font-size: 2.5rem; /* Adjust font size */
-    color: var(--primary-color); /* Set the color */
-    margin-bottom: var(--spacing-lg); /* Set bottom margin */
-    font-weight: bold; /* Set font weight */
-    line-height: 1.2; /* Set line height */
+    font-size: 2.5rem;
+    /* Adjust font size */
+    color: var(--primary-color);
+    /* Set the color */
+    margin-bottom: var(--spacing-lg);
+    /* Set bottom margin */
+    font-weight: bold;
+    /* Set font weight */
+    line-height: 1.2;
+    /* Set line height */
 }
 
 h2 {
-    font-size: 2rem; /* Adjust font size */
-    color: var(--primary-color); /* Set the color */
-    margin-bottom: var(--spacing-lg); /* Set bottom margin */
-    font-weight: bold; /* Set font weight */
-    line-height: 1.2; /* Set line height */
+    font-size: 2rem;
+    /* Adjust font size */
+    color: var(--primary-color);
+    /* Set the color */
+    margin-bottom: var(--spacing-lg);
+    /* Set bottom margin */
+    font-weight: bold;
+    /* Set font weight */
+    line-height: 1.2;
+    /* Set line height */
 }
 
 h3 {
-    font-size: 1.5rem; /* Adjust font size */
-    color: var(--primary-color); /* Set the color */
-    margin-bottom: var(--spacing-md); /* Set bottom margin */
-    font-weight: bold; /* Set font weight */
-    line-height: 1.2; /* Set line height */
+    font-size: 1.5rem;
+    /* Adjust font size */
+    color: var(--primary-color);
+    /* Set the color */
+    margin-bottom: var(--spacing-md);
+    /* Set bottom margin */
+    font-weight: bold;
+    /* Set font weight */
+    line-height: 1.2;
+    /* Set line height */
 }
 
 h4 {
-    font-size: 1.25rem; /* Adjust font size */
-    color: var(--primary-color); /* Set the color */
-    margin-bottom: var(--spacing-sm); /* Set bottom margin */
-    font-weight: bold; /* Set font weight */
-    line-height: 1.2; /* Set line height */
+    font-size: 1.25rem;
+    /* Adjust font size */
+    color: var(--primary-color);
+    /* Set the color */
+    margin-bottom: var(--spacing-sm);
+    /* Set bottom margin */
+    font-weight: bold;
+    /* Set font weight */
+    line-height: 1.2;
+    /* Set line height */
 }
 
 h5 {
-    font-size: 1rem; /* Adjust font size */
-    color: var(--primary-color); /* Set the color */
-    margin-bottom: var(--spacing-sm); /* Set bottom margin */
-    font-weight: bold; /* Set font weight */
-    line-height: 1.2; /* Set line height */
+    font-size: 1rem;
+    /* Adjust font size */
+    color: var(--primary-color);
+    /* Set the color */
+    margin-bottom: var(--spacing-sm);
+    /* Set bottom margin */
+    font-weight: bold;
+    /* Set font weight */
+    line-height: 1.2;
+    /* Set line height */
 }
 
 h6 {
-    font-size: 0.875rem; /* Adjust font size */
-    color: var(--primary-color); /* Set the color */
-    margin-bottom: var(--spacing-xs); /* Set bottom margin */
-    font-weight: bold; /* Set font weight */
-    line-height: 1.2; /* Set line height */
+    font-size: 0.875rem;
+    /* Adjust font size */
+    color: var(--primary-color);
+    /* Set the color */
+    margin-bottom: var(--spacing-xs);
+    /* Set bottom margin */
+    font-weight: bold;
+    /* Set font weight */
+    line-height: 1.2;
+    /* Set line height */
 }
 
 /* Navbar styles */
 nav {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -115,13 +166,18 @@ a:hover {
 
 /* Logo styles */
 img {
-    height: 40px; /* Adjust height as needed */
-    width: auto; /* Maintain aspect ratio */
+    height: 40px;
+    /* Adjust height as needed */
+    width: auto;
+    /* Maintain aspect ratio */
     margin-right: var(--spacing-md);
 }
 
 /* Hamburger menu styles */
 .hamburger {
+    position: fixed;
+    top: 25px;
+    right: 15px;
     display: none;
     cursor: pointer;
 }
@@ -162,9 +218,12 @@ img {
 /* Left side - greeting styles */
 .left-side {
     margin-bottom: 20px;
-    font-size: 18px; /* Adjust font size as needed */
-    font-weight: 500; /* Adjust font weight as needed */
-    line-height: 1.5; /* Adjust line height as needed */
+    font-size: 18px;
+    /* Adjust font size as needed */
+    font-weight: 500;
+    /* Adjust font weight as needed */
+    line-height: 1.5;
+    /* Adjust line height as needed */
 }
 
 /* Right side - logo styles */
@@ -184,19 +243,23 @@ img {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 0 auto;
+    /* Center the container horizontally */
     padding: 20px;
 }
 
 /* Left side - greeting styles */
 .left-side {
-    width: 60%; /* Left side takes 60% of the container */
+    width: 60%;
+    /* Left side takes 60% of the container */
 }
 
 /* Right side - logo styles */
 .right-side {
-    width: 40%; /* Right side takes 40% of the container */
-    text-align: right; /* Align the logo to the right */
+    width: 40%;
+    /* Right side takes 40% of the container */
+    text-align: right;
+    /* Align the logo to the right */
 }
 
 /* Logo image styles */
@@ -207,30 +270,38 @@ img {
 
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
+
     /* Adjust layout for smaller screens */
     .welcome-container {
         flex-direction: column;
-        text-align: center; /* Center align text on smaller screens */
+        text-align: center;
+        /* Center align text on smaller screens */
     }
 
     .left-side,
     .right-side {
-        width: 80vw; /* Both sides take 80% of the viewport width */
-        text-align: center; /* Center align text on smaller screens */
+        width: 80vw;
+        /* Both sides take 80% of the viewport width */
+        text-align: center;
+        /* Center align text on smaller screens */
     }
 
     .right-side img {
-        display: block; /* Center the logo image */
-        margin: 0 auto; /* Center the logo image */
+        display: block;
+        /* Center the logo image */
+        margin: 0 auto;
+        /* Center the logo image */
     }
 }
 
 /* Why Us container styles */
 .why-us-container {
     background-color: var(--background-color);
-    padding: var(--spacing-xl) var(--spacing-lg); /* Adjusted padding */
+    padding: var(--spacing-xl) var(--spacing-lg);
+    /* Adjusted padding */
     border-radius: var(--border-radius);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Added subtle box shadow */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    /* Added subtle box shadow */
     text-align: center;
     max-width: 800px;
     margin: 2rem auto;
@@ -247,13 +318,15 @@ img {
 .why-us-description {
     font-size: var(--font-size-lg);
     line-height: 1.6;
-    margin-bottom: var(--spacing-xl); /* Increased bottom margin */
+    margin-bottom: var(--spacing-xl);
+    /* Increased bottom margin */
 }
 
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
     .why-us-container {
-        padding: var(--spacing-lg); /* Adjusted padding */
+        padding: var(--spacing-lg);
+        /* Adjusted padding */
     }
 
     .why-us-title {
@@ -287,30 +360,37 @@ img {
 }
 
 .booking-list-container .heading {
-    color: var(--primary-color); /* Set the color of the heading */
-    font-size: var(--font-size-xl); /* Set the font size of the heading */
-    margin-bottom: var(--spacing-lg); /* Set the bottom margin of the heading */
+    color: var(--primary-color);
+    /* Set the color of the heading */
+    font-size: var(--font-size-xl);
+    /* Set the font size of the heading */
+    margin-bottom: var(--spacing-lg);
+    /* Set the bottom margin of the heading */
 }
 
 
 /* Define grid layout for the booking list container */
 .booking-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Initially, show 4 cards per row */
-    grid-gap: var(--spacing-md); /* Adjust the gap between cards */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    /* Initially, show 4 cards per row */
+    grid-gap: var(--spacing-md);
+    /* Adjust the gap between cards */
 }
 
 /* Media query for tablet screens */
 @media screen and (max-width: 1024px) {
     .booking-list {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Show 2 cards per row */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        /* Show 2 cards per row */
     }
 }
 
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
     .booking-list {
-        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Show 1 card per row */
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        /* Show 1 card per row */
     }
 }
 
@@ -319,44 +399,54 @@ img {
 .card {
     background-color: #fff;
     border-radius: var(--border-radius);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-    overflow: hidden; /* Ensure content does not overflow */
-    transition: transform 0.3s ease; /* Add smooth transition */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add subtle shadow */
+    overflow: hidden;
+    /* Ensure content does not overflow */
+    transition: transform 0.3s ease;
+    /* Add smooth transition */
     margin-bottom: 1rem;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Lift card on hover */
+    transform: translateY(-5px);
+    /* Lift card on hover */
 }
 
 /* Card image styles */
 .card img {
     width: 100%;
     height: auto;
-    border-top-left-radius: var(--border-radius); /* Rounded corners for the top */
+    border-top-left-radius: var(--border-radius);
+    /* Rounded corners for the top */
     border-top-right-radius: var(--border-radius);
-    object-fit: cover; /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Maintain aspect ratio */
 }
 
 /* Card content container styles */
 /* Card content container styles */
 .card-content {
     padding: var(--spacing-md);
-    background-color: rgba(255, 255, 255, 0.9); /* Add semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Add semi-transparent white background */
 }
 
 /* Card title styles */
 .card-title {
     color: var(--tertiary-text-color);
-    font-size: var(--font-size-xl); /* Increase font size for title */
-    margin-bottom: var(--spacing-sm); /* Adjust margin */
+    font-size: var(--font-size-xl);
+    /* Increase font size for title */
+    margin-bottom: var(--spacing-sm);
+    /* Adjust margin */
 }
 
 /* Card subtitle styles */
 .card-subtitle {
     color: var(--secondary-text-color);
     font-size: var(--font-size-base);
-    margin-bottom: var(--spacing-xs); /* Adjust margin */
+    margin-bottom: var(--spacing-xs);
+    /* Adjust margin */
 }
 
 /* Card description styles */
@@ -369,7 +459,8 @@ img {
 
 /* Card link styles */
 .card-link {
-    color: var(--secondary-text-color); /* Use secondary text color */
+    color: var(--secondary-text-color);
+    /* Use secondary text color */
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -402,14 +493,16 @@ img {
 .trust-description {
     font-size: var(--font-size-lg);
     line-height: 1.6;
-    margin-bottom: var(--spacing-xl); /* Increased bottom margin */
+    margin-bottom: var(--spacing-xl);
+    /* Increased bottom margin */
 }
 
 
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
     .trust-container {
-        padding: var(--spacing-lg); /* Adjusted padding */
+        padding: var(--spacing-lg);
+        /* Adjusted padding */
     }
 
     .trust-title {
@@ -421,4 +514,180 @@ img {
         font-size: var(--font-size-base);
         margin-bottom: var(--spacing-lg);
     }
+}
+
+.guide {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Center the content */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Choose a suitable font stack */
+    max-width: 800px;
+    /* Set maximum width for the guide */
+    margin: 0 auto;
+    /* Center the guide with margins on both sides */
+}
+
+.guide-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.steps-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.step-item {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+    text-align: left;
+    /* Reset text alignment */
+    font-size: 18px;
+    /* Adjust font size */
+    word-wrap: break-word;
+    /* Enable word wrap */
+}
+
+.step-item a {
+    color: blue;
+}
+
+.step-item::before {
+    content: '\2022';
+    /* Bullet character */
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    /* Blue color for bullets */
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 600px) {
+    .guide-title {
+        font-size: 24px;
+    }
+
+    .step-item {
+        font-size: 16px;
+    }
+}
+
+
+.benefit-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1b1b1b; /* Neon effect background color */
+}
+
+.benefit-section h2 {
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.benefit-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+    .benefit-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.benefit-card {
+    max-width: 400px;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    background-color: var(--background-color);
+    border: 1px solid white;
+}
+
+.benefit-card h3 {
+    color: var(--primary-color);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.benefit-card p {
+    margin-bottom: 0;
+    color: var(--secondary-text-color);
+    font-size: var(--font-size-base);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.benefit-section h2 {
+    margin-bottom: 10px;
+}
+
+.benefit-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .benefit-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.benefit-card {
+    max-width: 400px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #1b1b1b; /* Neon effect background color */
+}
+
+.benefit-card h3 {
+    margin-top: 0;
+    color: #fff; /* Neon effect text color */
+    font-size: 20px; /* Adjust font size */
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    margin-bottom: 0;
+    color: #ccc; /* Neon effect text color */
+    font-size: 16px; /* Adjust font size */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left img {
+    height: 40px;
+    width: auto;
+}
+
+.footer-right p {
+    margin: 0;
 }

@@ -1,9 +1,9 @@
 
 const navData = [
-    { text: 'Book Driving License', href: '/driving-license' },
-    { text: 'Book PAN Card', href: '/pan-card' },
-    { text: 'Book HSRP', href: '/hsrp' },
-    { text: 'Book Aadhar Card', href: '/aadhar-card' }
+    { text: 'Book Driving License', href: '/blog/driving-license' },
+    { text: 'Book PAN Card', href: '/blog/pan' },
+    { text: 'Book HSRP', href: '/blog/hsrp' },
+    { text: 'Book Aadhar Card', href: '/blog/aadhaar-card' }
 ];
 
 export default navData

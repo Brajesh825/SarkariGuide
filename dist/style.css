@@ -132,6 +132,7 @@ h6 {
 
 /* Navbar styles */
 nav {
+    top: 0;
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -139,8 +140,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary-color);
-    padding: var(--spacing-md) var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
     color: var(--text-color);
+}
+
+nav img {
+    margin-left: 1rem;
 }
 
 ul {
@@ -186,12 +192,16 @@ img {
     ul {
         display: none;
         flex-direction: column;
-        position: absolute;
         top: 50px;
         left: 0;
         width: 100%;
         background-color: var(--primary-color);
         padding: var(--spacing-md);
+    }
+
+    nav ul {
+        position: absolute;
+
     }
 
     li {
@@ -517,7 +527,7 @@ img {
 }
 
 .guide {
-    background-color: #f8f9fa;
+    background-color: #ecebeb;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -528,6 +538,8 @@ img {
     max-width: 800px;
     /* Set maximum width for the guide */
     margin: 0 auto;
+    margin-bottom: 1.25rem;
+    
     /* Center the guide with margins on both sides */
 }
 
@@ -586,7 +598,8 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #1b1b1b; /* Neon effect background color */
+    background-color: #1b1b1b;
+    /* Neon effect background color */
 }
 
 .benefit-section h2 {
@@ -657,20 +670,25 @@ img {
     max-width: 400px;
     border-radius: 5px;
     padding: 20px;
-    background-color: #1b1b1b; /* Neon effect background color */
+    background-color: #1b1b1b;
+    /* Neon effect background color */
 }
 
 .benefit-card h3 {
     margin-top: 0;
-    color: #fff; /* Neon effect text color */
-    font-size: 20px; /* Adjust font size */
+    color: #fff;
+    /* Neon effect text color */
+    font-size: 20px;
+    /* Adjust font size */
     margin-bottom: 10px;
 }
 
 .benefit-card p {
     margin-bottom: 0;
-    color: #ccc; /* Neon effect text color */
-    font-size: 16px; /* Adjust font size */
+    color: #ccc;
+    /* Neon effect text color */
+    font-size: 16px;
+    /* Adjust font size */
 }
 
 /* Footer styles */
@@ -690,4 +708,231 @@ img {
 
 .footer-right p {
     margin: 0;
+}
+
+
+.blog-heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-heading-title {
+    color: var(--primary-color);
+    /* Set the color */
+    font-size: var(--font-size-xl);
+    /* Set the font size */
+    margin-bottom: var(--spacing-lg);
+    /* Set the bottom margin */
+}
+
+.blog-heading-image {
+    margin-top: 1rem;
+    max-width: 30rem;
+    height: auto;
+    margin-bottom: var(--spacing-md);
+    /* Set the bottom margin */
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    .blog-heading-image {
+        max-width: 80%;
+        /* Adjust maximum width for smaller screens */
+    }
+}
+
+.charges {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.charges-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 0;
+}
+
+.service-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.service-description {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.service-charge {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.note {
+    font-style: italic;
+    color: #777;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .charges {
+        padding: 15px;
+    }
+
+    .charges-title {
+        font-size: 20px;
+    }
+}
+
+.benefit {
+    background-color: #ecebeb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* max-width: 800px; */
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-title {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.benefit-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 0;
+    max-width: 800px;
+}
+
+.benefit-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.benefit-description {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.benefit-charge {
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .benefit-list {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+
+    .benefit {
+        padding: 15px;
+    }
+
+    .benefit-title {
+        font-size: 20px;
+    }
+}
+
+.blog-service-container {
+    background-color: #ecebeb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin:  0 auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.25rem;
+}
+
+.blog-service-container h2 {
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.blog-service {
+    max-width: 800px;
+    padding: 0.25rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.blog-service-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-service-item:hover {
+    transform: translateY(-5px);
+}
+
+.blog-service-item-content {
+    padding: 20px;
+}
+
+.blog-service-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.blog-service-item p {
+    margin-bottom: 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .blog-service {
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+        padding: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .blog-service-item-content {
+        padding: 15px;
+    }
 }

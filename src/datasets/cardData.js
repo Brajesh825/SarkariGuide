@@ -20,7 +20,7 @@ const cardData = [
         subtitle: 'H.S.R.P. Plate',
         description: 'Step By Step Guide To Book H.S.R.P. Plate',
         imageUrl: '/image/hsrp.jpg',
-        link: '/blog/pan'
+        link: '/blog/hsrp'
     },
     {
         title: 'Driving License',

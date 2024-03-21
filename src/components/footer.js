@@ -21,6 +21,18 @@ const Footer = ({ logoSrc }) => {
     const rightContainer = document.createElement('div');
     rightContainer.classList.add('footer-right');
 
+    // Create links for Privacy Policy, Terms and Conditions, Refund Policy, and Disclaimer
+    const privacyPolicyLink = createLink('Privacy Policy', '/privacy-policy');
+    const termsAndConditionsLink = createLink('Terms and Conditions', '/terms-and-conditions');
+    const refundPolicyLink = createLink('Refund Policy', '/refund-policy');
+    const disclaimerLink = createLink('Disclaimer', '/disclaimer');
+
+    // Append links to the right container
+    rightContainer.appendChild(privacyPolicyLink);
+    rightContainer.appendChild(termsAndConditionsLink);
+    rightContainer.appendChild(refundPolicyLink);
+    rightContainer.appendChild(disclaimerLink);
+
     // Create "All Rights Reserved" text
     const rightsText = document.createElement('p');
     rightsText.textContent = 'All Rights Reserved';
@@ -33,6 +45,14 @@ const Footer = ({ logoSrc }) => {
     footerContainer.appendChild(rightContainer);
 
     return footerContainer;
+}
+
+// Helper function to create links
+function createLink(text, url) {
+    const link = document.createElement('a');
+    link.textContent = text;
+    link.href = url;
+    return link;
 }
 
 export default Footer;

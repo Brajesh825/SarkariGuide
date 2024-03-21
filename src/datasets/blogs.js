@@ -98,19 +98,26 @@ const blogs = {
       note: "* Update of more than one field on single instance will be considered as one update."
     }
   },
-  "driving-license": {
+  "driving-licence": {
     "guide": {
       "title": "Guide to Book Driving License",
       "steps": [
         {
-          "text": "Visit the website ",
+          "text": "Want a driving licence ",
           "link": {
-            "href": "https://dlparivahan.in/",
-            "text": "https://dlparivahan.in/"
+            "href": "Drivinglicenceapply.org",
+            "text": "Book Here"
           }
         },
         {
           "text": "Click the “Book Here” button above or visit the provided website."
+        },
+        {
+          "text": "You can also visit the official website by ",
+          "link": {
+            "href": "https://dlparivahan.in/",
+            "text": "Clicking Here"
+          }
         },
         {
           "text": "Complete the online form with your personal details and required information."
@@ -141,12 +148,12 @@ const blogs = {
         {
           "text": "Select your HSRP by clicking ",
           "link": {
-            "href": "https://parivahan.gov.in/",
+            "href": "https://bookmyhsrp.xyz/",
             "text": "Book Now"
           }
         },
         {
-          "text": "Visit the official website at ",
+          "text": "You can also visit the official website at ",
           "link": {
             "href": "https://parivahan.gov.in/",
             "text": "https://parivahan.gov.in/"

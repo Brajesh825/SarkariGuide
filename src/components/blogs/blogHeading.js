@@ -14,9 +14,7 @@ function BlogHeading({ title, image }) {
         headingImage.src = image;
         headingImage.alt = title + ' Image';
         headingContainer.appendChild(headingImage);
-    }
-
-   
+    }   
 
     return headingContainer;
 }

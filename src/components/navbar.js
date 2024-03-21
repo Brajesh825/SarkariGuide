@@ -1,6 +1,4 @@
-// Navbar.js
-
-const Navbar = ({ links, logoSrc }) => {
+const Navbar = ({ links }) => {
     const nav = document.createElement('nav');
     const ul = document.createElement('ul');
 
@@ -14,10 +12,10 @@ const Navbar = ({ links, logoSrc }) => {
         ul.appendChild(li);
     });
 
-    // Create logo element
-    const logo = document.createElement('img');
-    logo.src = logoSrc; // Use the logoSrc prop for the logo path
-    logo.alt = 'Logo';
+    // Create text for digital services
+    const digitalServicesText = document.createElement('span');
+    digitalServicesText.textContent = 'Digital Services';
+    digitalServicesText.classList.add('digital-services'); // Add a class for styling
 
     // Create hamburger menu icon
     const hamburger = document.createElement('div');
@@ -29,8 +27,8 @@ const Navbar = ({ links, logoSrc }) => {
         ul.style.display = ul.style.display === 'block' ? 'none' : 'block';
     });
 
-    // Append logo, hamburger button, and links to the navbar
-    nav.appendChild(logo);
+    // Append digital services text, hamburger button, and links to the navbar
+    nav.appendChild(digitalServicesText);
     nav.appendChild(ul);
     nav.appendChild(hamburger);
     return nav;

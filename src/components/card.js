@@ -3,6 +3,12 @@ const Card = (props) => {
 
     const cardContainer = document.createElement('div');
     cardContainer.classList.add('card');
+    cardContainer.style.cursor = 'pointer'; // Change cursor to indicate clickability
+
+    // Add event listener to redirect to the specified link when clicked
+    cardContainer.addEventListener('click', () => {
+        window.location.href = link;
+    });
 
     const image = document.createElement('img');
     image.src = imageUrl;

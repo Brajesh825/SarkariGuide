@@ -27,7 +27,7 @@ const cardData = [
         subtitle: 'How to book Driving License',
         description: 'Step By Step Guide To Book Driving License',
         imageUrl: '/image/dl.jpg',
-        link: '/blog/driving-license'
+        link: '/blog/driving-licence'
     }
 ];
 

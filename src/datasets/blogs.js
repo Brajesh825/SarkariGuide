@@ -105,18 +105,18 @@ const blogs = {
         {
           "text": "Want a driving licence ",
           "link": {
-            "href": "Drivinglicenceapply.org",
-            "text": "Book Here"
+            "href": "https://www.Drivinglicenceapply.org",
+            "text": "Book Now"
           }
         },
         {
           "text": "Click the “Book Here” button above or visit the provided website."
         },
         {
-          "text": "You can also visit the official website by ",
+          "text": "You can also visit the official website at ",
           "link": {
-            "href": "https://dlparivahan.in/",
-            "text": "Clicking Here"
+            "href": " https://parivahan.gov.in/",
+            "text": "https://parivahan.gov.in/"
           }
         },
         {
@@ -155,8 +155,8 @@ const blogs = {
         {
           "text": "You can also visit the official website at ",
           "link": {
-            "href": "https://parivahan.gov.in/",
-            "text": "https://parivahan.gov.in/"
+            "href": "https://bookmyhsrp.com/",
+            "text": "https://bookmyhsrp.com/"
           }
         },
         {

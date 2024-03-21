@@ -3,7 +3,7 @@ const refundPolicyData = {
     lastUpdated: "Last updated: September 04, 2020",
     content: [
         {
-            title: "Thank you for using service at Digital India Portal.",
+            title: "Thank you for using service at Digital Services.",
             description: "If, for any reason, You are not completely satisfied with a service We invite You to review our policy on refunds and cancellation.",
         },
         {
@@ -17,10 +17,10 @@ const refundPolicyData = {
                     title: "Definitions",
                     description: "For the purposes of this Refund Policy:",
                     terms: [
-                        "Company (referred to as either 'the Company', 'We', 'Us' or 'Our' in this Agreement) refers to Digital India Portal, DIGITAL INDIA CENTRE, Pooja Market, Near Petrol Pump, Daurala, Meerut, Uttar Pradesh - 250221.",
+                        "Company (referred to as either 'the Company', 'We', 'Us' or 'Our' in this Agreement) refers to Digital Services, DIGITAL INDIA CENTRE, Pooja Market, Near Petrol Pump, Daurala, Meerut, Uttar Pradesh - 250221.",
                         "Orders mean a request by You to used our services from Us.",
                         "Service refers to the Website.",
-                        "Website refers to Digital India Portal, accessible from https://www.digitalindiaportal.co.in/",
+                        "Website refers to Digital Services, accessible from https://www.digitalindiaportal.co.in/",
                         "You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable."
                     ]
                 }

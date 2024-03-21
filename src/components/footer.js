@@ -9,13 +9,13 @@ const Footer = ({ logoSrc }) => {
     const leftContainer = document.createElement('div');
     leftContainer.classList.add('footer-left');
 
-    // Create logo element
-    const logo = document.createElement('img');
-    logo.src = logoSrc; // Use the provided logo source
-    logo.alt = 'Logo';
+    // Create text for digital services
+    const digitalServicesText = document.createElement('span');
+    digitalServicesText.textContent = 'Digital Services';
+    digitalServicesText.classList.add('digital-services'); // Add a class for styling
 
     // Append logo to the left container
-    leftContainer.appendChild(logo);
+    leftContainer.appendChild(digitalServicesText);
 
     // Create container for the right side
     const rightContainer = document.createElement('div');

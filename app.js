@@ -18,3 +18,8 @@ page('*', () => {
 
 // Start routing
 page.start();
+
+
+const root = document.getElementById('root')
+
+root.style.opacity = 0;

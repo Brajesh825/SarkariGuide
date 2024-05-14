@@ -20,6 +20,4 @@ page('*', () => {
 page.start();
 
 
-const root = document.getElementById('root')
-
-root.style.opacity = 0;
+document.body.style.opacity = 0
